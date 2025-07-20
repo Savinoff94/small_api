@@ -1,6 +1,14 @@
 ## Getting Started
 
-First of all make shure you are inside project folder
+# CORTEX TEST DESCRIPTION
+ATTENTION: you should have firebase client
+First of all open terminal, run
+```bash
+git clone https://github.com/Savinoff94/small_api.git
+```
+```bash
+cd ./small_api
+```
 
 Second, install you need to build container:
 
@@ -19,7 +27,7 @@ Then, run the container:
 ## Base URL 
 
 ```
-/todos
+http://localhost:3000/todos
 ```
 
 ### GET '/todos'
@@ -27,7 +35,7 @@ Fetch all todos or filter by status
 #### Example 1
 Request:
 ```
-http://localhost:3001/todos/
+http://localhost:3000/todos/
 ``` 
 Response: 
 ```json
@@ -50,7 +58,7 @@ Response:
 #### Example 2
 Request:
 ```
-http://localhost:3001/todos/?status=in_process
+http://localhost:3000/todos/?status=in_process
 ``` 
 Response: 
 ```json
@@ -71,7 +79,7 @@ Delete one todo by id
 #### Example 1
 Request:
 ```
-http://localhost:3001/todos/12321
+http://localhost:3000/todos/12321
 ``` 
 Response(success): 
 ```json
@@ -114,7 +122,7 @@ Response(success):
 Updates satus of one todo 
 Request:
 ```
-http://localhost:3001/todos/12321
+http://localhost:3000/todos/12321
 ``` 
 #### Example 1
 Request body:
